@@ -1,45 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 body {
-    background: linear-gradient(45deg, rgb(213, 47, 144) 0%, rgb(177, 114, 239) 100%);
-    color: #fff;
-    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(
+    45deg,
+    rgb(213, 47, 144) 0%,
+    rgb(177, 114, 239) 100%
+  );
+  color: #fff;
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2.5em;
-    color: white;
-    text-shadow: 0 0 8px #ff0080, 0 0 16px #00ffe7;
-    margin-top: 40px;
+  font-family: "Press Start 2P", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 0 0 8px #ff0080, 0 0 16px #00ffe7;
+  margin-top: 40px;
 }
 
-h2{
-    text-align: center;
+h2 {
+  text-align: center;
 }
 
-a, button {
-    font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
-    background: #00ffe7;
-    color: #7928ca;
-    border: 2px solid #ff0080;
+a,
+button {
+  font-family: "Press Start 2P", "Courier New", Courier, monospace;
+  background: #00ffe7;
+  color: #7928ca;
+  border: 2px solid #ff0080;
 
-    text-transform: uppercase;
-    box-shadow: 0 0 8px white;
-    transition: background 0.2s;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px white;
+  transition: background 0.2s;
 }
 
-a:hover, button:hover {
-    background: #ff0080;
-    color: #fff;
-    border-color: #00ffe7;
+a:hover,
+button:hover {
+  background: #ff0080;
+  color: #fff;
+  border-color: #00ffe7;
 }
 
 .img-lista {
-    width: 200;
+  /* width: 200; */
+  /* width: 280px; */
+  width: calc(100% - 40px);
+  max-width: 420px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px;
 }
 
+.list {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.li_text {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: calc(100% - 40px);
+}
